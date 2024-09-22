@@ -17,7 +17,9 @@
 
     <main class="">
 
-        <section class=" fixed w-full top-0 backdrop-blur-lg pb-2">
+        <section class="fixed w-full top-0 backdrop-blur-lg pb-2">
+
+
             <nav class="flex justify-between md:justify-around items-center p-2  bg-[#F9F7F3]">
                 <div>
                     <button class="bg-[#B4F461] md:px-8 px-4 py-2 font-semibold md:text-[20px] rounded-lg">blog</button>
@@ -33,7 +35,7 @@
 
                 <div class="flex space-x-2 items-center ">
                     <img src="./assets/coin.png" alt="">
-                    <a class="font-medium md:text-[20px]" href="#">5500 <span class="font-medium">BDT</span> </a>
+                    <a class="font-medium md:text-[20px]" href="#"><span id="mainBalance">5000</span> <span class="font-medium">BDT</span> </a>
                 </div>
 
 
@@ -41,13 +43,10 @@
             </nav>
 
 
-            <div class="flex justify-center items-center space-x-5 sm:space-x-10 mt-6 sm:mt-8">
+            <div class="flex justify-center items-center space-x-4 sm:space-x-5 mt-6 sm:mt-8">
                 <button class="bg-[#B4F461] border-2 px-6 py-2 md:text-[20px] rounded-md font-bold">Donation</button>
                 <button class="border-2  px-6 py-2 md:text-[20px] rounded-md font-bold">History</button>
-
             </div>
-
-
 
 
 
@@ -58,9 +57,7 @@
 
     </main>
 
-
-
-
+<!-- ! header  -->
     <header class="mt-48  w-11/12 mx-auto space-y-10">
 
         <!-- ! body seciton  -->
@@ -78,7 +75,7 @@
 
                 <div class="flex">   
                  
-                    <button class="border-2 p-2 bg-[#1111110D] font-medium">  <i class="ri-money-dollar-circle-fill text-xl text-warning "> </i>550<span> BDT</span></button>
+                    <button class="border-2 p-2 bg-[#1111110D] font-medium">  <i class="ri-money-dollar-circle-fill text-xl text-warning "> </i><span id="donatedBalance">500</span> BDT</button>
                 </div>
 
                 <p class="font-bold text-[20px]">Donate for Flood at Noakhali, Bangladesh</p>
@@ -88,12 +85,13 @@
 
 
                 <input
+                id="inpDonateAmount"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-white w-full " />
 
                 <div>
-                    <button class="btn bg-[#B4F461] w-full font-semibold">Donate Now</button>
+                    <button  id="btnDonate" class="btn bg-[#B4F461] w-full font-semibold">Donate Now</button>
                 </div>
 
 
@@ -187,9 +185,16 @@
         </div>
 
 
-
-
     </header>
+
+
+  <!-- !  special section  -->
+
+
+
+
+    <script src="js/utility.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
