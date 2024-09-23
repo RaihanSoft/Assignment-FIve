@@ -1,6 +1,5 @@
 document.getElementById('btnDonate').addEventListener('click', function () {
 
-
     // ! validation One
     const inpDonateAmount = Donate('inpDonateAmount')
     const mainBalance = DonateInner('mainBalance')
@@ -10,10 +9,6 @@ document.getElementById('btnDonate').addEventListener('click', function () {
         return
 
     }
-
-
-
-
 
 
     // !special Model
@@ -26,13 +21,7 @@ document.getElementById('btnDonate').addEventListener('click', function () {
         const inpDonate = document.getElementById('inpDonateAmount')
         inpDonate.value = '';
 
-
-
-
     })
-
-
-
 
     // ! function call 
 
@@ -41,10 +30,6 @@ document.getElementById('btnDonate').addEventListener('click', function () {
     document.getElementById('mainBalance').innerText = minusNewBalance
     const plusNewBalance = donatedBalance + inpDonateAmount
     donatedBalance = document.getElementById('donatedBalance').innerText = plusNewBalance;
-
-
-
-
 
 })
 
