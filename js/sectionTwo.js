@@ -1,19 +1,15 @@
-document.getElementById('btnDonate').addEventListener('click', function () {
-
+document.getElementById('btnDonate2').addEventListener('click', function () {
 
     // ! validation One
-    const inpDonateAmount = Donate('inpDonateAmount')
+    const inpDonateAmount = Donate('inpDonateAmount2')
     const mainBalance = DonateInner('mainBalance')
-
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
         alert("Invalid Input")
         return
 
     }
 
-
-
-
+        
 
 
     // !special Model
@@ -21,30 +17,26 @@ document.getElementById('btnDonate').addEventListener('click', function () {
     special.classList.remove('hidden')
     special.classList.add('flex')
     document.getElementById('btnClose').addEventListener('click', function () {
-        special.classList.add('hidden')
+    special.classList.add('hidden')
+
+        
         // ! reset input
-        const inpDonate = document.getElementById('inpDonateAmount')
-        inpDonate.value = '';
-
-
-
+        const inpDonate = document.getElementById('inpDonateAmount2')
+        inpDonate.value='';
+    
 
     })
 
 
 
-
-    // ! function call 
-
-    const donatedBalance = DonateInner('donatedBalance')
+    // !function calls 
+    const donatedBalance = DonateInner('donatedBalance2')
     const minusNewBalance = mainBalance - inpDonateAmount
     document.getElementById('mainBalance').innerText = minusNewBalance
     const plusNewBalance = donatedBalance + inpDonateAmount
-    donatedBalance = document.getElementById('donatedBalance').innerText = plusNewBalance;
-
+    donatedBalance = document.getElementById('donatedBalance2').innerText = plusNewBalance;
 
 
 
 
 })
-

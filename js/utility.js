@@ -1,5 +1,6 @@
-function Donate(id){
+function Donate(id ){
   return Number(document.getElementById(id).value)
+
 }
 
 function DonateInner(id){
