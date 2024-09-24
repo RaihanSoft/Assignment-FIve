@@ -37,7 +37,8 @@ The history section will display transaction notifications, including:
 Date and time of the transaction.
 Donation amount.
 Donation name.
-Challenges
+<br/>
+#Challenges
 Sticky Navbar: Make the navbar sticky to the top of the page.
 Blog Page: Create a blog.html file and link it to the main page:
 The blog page should contain 4 questions and their answers:
