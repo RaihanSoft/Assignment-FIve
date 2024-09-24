@@ -59,14 +59,17 @@ document.getElementById('btnDonate').addEventListener('click', function () {
     const containerDiv = document.getElementById('container')
     const inpDonateAmount2 = Donate('inpDonateAmount')
     const p = document.createElement('p')
-    p.classList.add('border-2', 'w-full', 'md:w-[800px]', 'mx-auto', 'p-5', 'shadow-lg', 'rounded-lg')
+    p.classList.add('border-2', 'w-full', 'md:w-[900px]', 'mx-auto', 'p-5', 'shadow-lg', 'rounded-lg')
 
 
     p.innerHTML =
 
         ` 
-            <p class='font-bold text-xl mb-2'>${inpDonateAmount2} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-            <p class="bg-gradient-to-r from-slate-100  to-red-50 p-2 rounded-md">${new Date()}</p>
+  <div class="border-l-4 border-prime rounded-xl  pl-4">
+
+            <p class='font-bold text-xl mb-2'>${inpDonateAmount2.toFixed(2)} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+            <p class="bg-gradient-to-r from-gray-100  to-prime p-2 rounded-md">${new Date()}</p>
+  </div>
     
            `
 
@@ -84,7 +87,6 @@ document.getElementById('btnDonate2').addEventListener('click', function () {
 
     // ! validation Tne
     const inpDonateAmount = Donate('inpDonateAmount2')
-    const mainBalance = DonateInner('mainBalance')
 
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0) {
         // ! reset input
@@ -98,15 +100,18 @@ document.getElementById('btnDonate2').addEventListener('click', function () {
     const containerDiv = document.getElementById('container')
     const inpDonateAmount2 = Donate('inpDonateAmount2')
     const p = document.createElement('p')
-    p.classList.add('border-2', 'w-full', 'md:w-[800px]', 'mx-auto', 'p-5', 'shadow-lg', 'rounded-lg')
+    p.classList.add('border-2', 'w-full', 'md:w-[900px]', 'mx-auto', 'p-5', 'shadow-lg', 'rounded-lg')
 
     p.innerHTML =
 
-        ` 
-    <p class='font-bold text-xl mb-2'>${inpDonateAmount2} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
-      <p class="bg-gradient-to-r from-slate-100  to-red-50 p-2 rounded-md">${new Date()}</p>
-
-   `
+    ` 
+    <div class="border-l-4 border-prime rounded-xl  pl-4">
+  
+              <p class='font-bold text-xl mb-2'>${inpDonateAmount2.toFixed(2)}  Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+              <p class="bg-gradient-to-r from-gray-100  to-prime p-2 rounded-md">${new Date()}</p>
+    </div>
+      
+             `
     containerDiv.appendChild(p)
 
 
@@ -114,6 +119,7 @@ document.getElementById('btnDonate2').addEventListener('click', function () {
 
 
 })
+
 
 
 
@@ -125,7 +131,6 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
 
     // ! validation Tne
     const inpDonateAmount = Donate('inpDonateAmount3')
-    const mainBalance = DonateInner('mainBalance')
 
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0) {
         // ! reset input
@@ -140,15 +145,17 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
     const containerDiv = document.getElementById('container')
     const inpDonateAmount3 = Donate('inpDonateAmount3')
     const p = document.createElement('p')
-    p.classList.add('border-2', 'w-full', 'md:w-[800px]', 'mx-auto', 'p-5', 'shadow-lg', 'rounded-lg')
+    p.classList.add('border-2', 'w-full', 'md:w-[900px]', 'mx-auto', 'p-5', 'shadow-lg', 'rounded-lg')
 
     p.innerHTML =
-
-        ` 
-    <p class='font-bold text-xl mb-2'>${inpDonateAmount3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-    <p class="bg-gradient-to-r from-slate-100  to-red-50 p-2 rounded-md">${new Date()}</p>
-
-   `
+    ` 
+    <div class="border-l-4 border-prime rounded-xl  pl-4">
+  
+              <p class='font-bold text-xl mb-2'>${inpDonateAmount3.toFixed(2)} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+              <p class="bg-gradient-to-r from-gray-100  to-prime p-2 rounded-md">${new Date()}</p>
+    </div>
+      
+             `
 
     containerDiv.appendChild(p)
 

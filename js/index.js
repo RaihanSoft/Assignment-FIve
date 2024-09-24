@@ -29,9 +29,10 @@ document.getElementById('btnDonate').addEventListener('click', function () {
 
     const donatedBalance = DonateInner('donatedBalance')
     const minusNewBalance = mainBalance - inpDonateAmount
-    document.getElementById('mainBalance').innerText = minusNewBalance
-    const plusNewBalance = donatedBalance + inpDonateAmount
-    donatedBalance = document.getElementById('donatedBalance').innerText = plusNewBalance
+    document.getElementById('mainBalance').innerText = minusNewBalance.toFixed(2)
 
+    const plusNewBalance = (donatedBalance + inpDonateAmount).toFixed(2)
+    donatedBalance = document.getElementById('donatedBalance').innerText = plusNewBalance
+   
 })
 
