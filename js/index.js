@@ -2,7 +2,7 @@
 
 document.getElementById('btnDonate').addEventListener('click', function () {
 
-    // // ! validation One
+    // ! validation One
     const inpDonateAmount = Donate('inpDonateAmount')
     const mainBalance = DonateInner('mainBalance')
 
@@ -31,7 +31,7 @@ document.getElementById('btnDonate').addEventListener('click', function () {
     const minusNewBalance = mainBalance - inpDonateAmount
     document.getElementById('mainBalance').innerText = minusNewBalance
     const plusNewBalance = donatedBalance + inpDonateAmount
-    donatedBalance = document.getElementById('donatedBalance').innerText = plusNewBalance;
+    donatedBalance = document.getElementById('donatedBalance').innerText = plusNewBalance
 
 })
 

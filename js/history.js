@@ -45,11 +45,6 @@ document.getElementById('btnDonate').addEventListener('click', function () {
 
 
 
-
-
-
-
-
     const containerDiv = document.getElementById('container')
     const inpDonateAmount2 = Donate('inpDonateAmount')
     const p = document.createElement('p')
@@ -60,7 +55,7 @@ document.getElementById('btnDonate').addEventListener('click', function () {
 
         ` 
             <p class='font-bold text-xl mb-2'>${inpDonateAmount2} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-            <p class="bg-gray-100 p-2 rounded-md">${new Date()}</p>
+            <p class="bg-gradient-to-r from-slate-100  to-red-50 p-2 rounded-md">${new Date()}</p>
     
            `
 
@@ -101,7 +96,7 @@ document.getElementById('btnDonate2').addEventListener('click', function () {
 
         ` 
     <p class='font-bold text-xl mb-2'>${inpDonateAmount2} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
-      <p class="bg-gray-100 p-2 rounded-md">${new Date()}</p>
+      <p class="bg-gradient-to-r from-slate-100  to-red-50 p-2 rounded-md">${new Date()}</p>
 
    `
     containerDiv.appendChild(p)
@@ -143,7 +138,7 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
 
         ` 
     <p class='font-bold text-xl mb-2'>${inpDonateAmount3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-    <p class="bg-gray-100 p-2 rounded-md">${new Date()}</p>
+    <p class="bg-gradient-to-r from-slate-100  to-red-50 p-2 rounded-md">${new Date()}</p>
 
    `
 
