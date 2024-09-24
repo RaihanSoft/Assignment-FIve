@@ -5,6 +5,9 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
     const mainBalance = DonateInner('mainBalance')
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
         alert("Invalid Input")
+        const inpDonate = document.getElementById('inpDonateAmount3')
+        inpDonate.value = '';
+
         return
 
     }

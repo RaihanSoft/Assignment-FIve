@@ -1,15 +1,16 @@
+
+
 document.getElementById('btnDonate').addEventListener('click', function () {
 
-    // ! validation One
+    // // ! validation One
     const inpDonateAmount = Donate('inpDonateAmount')
     const mainBalance = DonateInner('mainBalance')
 
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
         alert("Invalid Input")
+        document.getElementById('inpDonateAmount').value='';
         return
-
     }
-
 
     // !special Model
     const special = document.getElementById('specialModel')
@@ -20,6 +21,7 @@ document.getElementById('btnDonate').addEventListener('click', function () {
         // ! reset input
         const inpDonate = document.getElementById('inpDonateAmount')
         inpDonate.value = '';
+   
 
     })
 

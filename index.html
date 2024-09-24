@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Five</title>
+    <!-- !All CDNS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                prime: '#B4F461',
+              }
+              
+            }
+          }
+        }
+      </script>
 </head>
 
-<body>
+<body style="font-family:Lexend">
 
 
 
@@ -20,7 +37,7 @@
         <nav class="flex justify-between md:justify-around items-center p-2 pb-4 bg-[#F9F7F3] ">
             <div>
                 <button id="btnBlog"
-                    class="bg-[#B4F461] md:px-8 px-4 py-2 font-semibold md:text-[20px] rounded-lg">blog</button>
+                    class="bg-prime md:px-8 px-4 py-2 font-semibold md:text-[20px] rounded-lg">blog</button>
             </div>
 
 
@@ -33,7 +50,7 @@
 
             <div class="flex space-x-2 items-center ">
                 <img src="./assets/coin.png" alt="">
-                <a class="font-medium md:text-[20px]" href="#"><span id="mainBalance">1000</span> <span
+                <a class="font-medium md:text-[20px]" href="#"><span id="mainBalance">5000</span> <span
                         class="font-medium">BDT</span> </a>
             </div>
 
@@ -44,7 +61,7 @@
 
         <div class="flex justify-center items-center space-x-4 sm:space-x-5 mt-6 sm:mt-8">
             <button id="donationBtn"
-                class="bg-[#B4F461] border-2 px-6 py-2 md:text-[20px] rounded-md font-bold">Donation</button>
+                class="bg-prime border-2 px-6 py-2 md:text-[20px] rounded-md font-bold">Donation</button>
             <button id="historyBtn" class="border-2  px-6 py-2 md:text-[20px] rounded-md font-bold">History</button>
         </div>
 
@@ -91,7 +108,7 @@
                     class="input input-bordered input-white w-full " />
 
                 <div>
-                    <button id="btnDonate" class="btn bg-[#B4F461] w-full font-semibold">Donate Now</button>
+                    <button id="btnDonate" class="btn bg-prime w-full font-semibold">Donate Now</button>
                 </div>
 
 
@@ -114,7 +131,7 @@
 
             <!-- * right side  -->
 
-            <div class="space-y-7 text-center md:text-start mt-10 md:mt-0 px-2 md:px-40 lg:px-2">
+            <div class="space-y-7 text-center md:text-start mt-10 md:mt-0 px-2 lg:px-2">
 
                 <div class="flex">
 
@@ -136,7 +153,7 @@
                     class="input input-bordered input-white w-full" />
 
                 <div>
-                    <button id="btnDonate2" class="btn bg-[#B4F461] w-full font-semibold">Donate Now</button>
+                    <button id="btnDonate2" class="btn bg-prime w-full font-semibold">Donate Now</button>
                 </div>
 
 
@@ -159,7 +176,7 @@
 
             <!-- * right side  -->
 
-            <div class="space-y-7 text-center md:text-start mt-10 md:mt-0 px-2 md:px-40 lg:px-2">
+            <div class="space-y-7 text-center md:text-start mt-10 md:mt-0 px-2 lg:px-2">
 
                 <div class="flex">
 
@@ -181,7 +198,7 @@
                     class="input input-bordered input-white w-full" />
 
                 <div>
-                    <button id="btnDonate3" class="btn bg-[#B4F461] w-full font-semibold">Donate Now</button>
+                    <button id="btnDonate3" class="btn bg-prime w-full font-semibold">Donate Now</button>
                 </div>
 
 

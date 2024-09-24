@@ -1,5 +1,9 @@
 document.getElementById('historyBtn').addEventListener('click', function () {
 
+
+
+
+
     const header = document.getElementById('header')
     header.classList.add('hidden')
 
@@ -8,16 +12,16 @@ document.getElementById('historyBtn').addEventListener('click', function () {
 
 
     const btnDonation = document.getElementById('donationBtn')
-    btnDonation.classList.remove('bg-[#B4F461]')
+    btnDonation.classList.remove('bg-prime')
 
-    document.getElementById('historyBtn').classList.add('bg-[#B4F461]')
+    document.getElementById('historyBtn').classList.add('bg-prime')
     // ! second 
 
     document.getElementById('donationBtn').addEventListener('click', function () {
         document.getElementById('container').classList.add('hidden')
 
-        document.getElementById('historyBtn').classList.remove('bg-[#B4F461]')
-        btnDonation.classList.add('bg-[#B4F461]')
+        document.getElementById('historyBtn').classList.remove('bg-prime')
+        btnDonation.classList.add('bg-prime')
         header.classList.remove('hidden')
 
     })
@@ -28,21 +32,21 @@ document.getElementById('historyBtn').addEventListener('click', function () {
 // ! history start ONe
 
 document.getElementById('btnDonate').addEventListener('click', function () {
-
-
-
     // ! validation One
     const inpDonateAmount = Donate('inpDonateAmount')
-    const mainBalance = DonateInner('mainBalance')
+    if (isNaN(inpDonateAmount) || inpDonateAmount <= 0) {
+        // ! reset input
+        document.getElementById('inpDonateAmount').value = ''
 
-    if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
-                // ! reset input
-                const inpDonate = document.getElementById('inpDonateAmount')
-                inpDonate.value = '';
-        
+
         return
 
     }
+
+
+
+
+
 
 
 
@@ -63,6 +67,10 @@ document.getElementById('btnDonate').addEventListener('click', function () {
     containerDiv.appendChild(p)
 
 
+
+
+
+
 })
 // ! history end ONe
 
@@ -71,18 +79,18 @@ document.getElementById('btnDonate').addEventListener('click', function () {
 document.getElementById('btnDonate2').addEventListener('click', function () {
 
 
-        // ! validation Tne
-        const inpDonateAmount = Donate('inpDonateAmount2')
-        const mainBalance = DonateInner('mainBalance')
-    
-        if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
-                    // ! reset input
+    // ! validation Tne
+    const inpDonateAmount = Donate('inpDonateAmount2')
+    const mainBalance = DonateInner('mainBalance')
+
+    if (isNaN(inpDonateAmount) || inpDonateAmount <= 0) {
+        // ! reset input
         const inpDonate = document.getElementById('inpDonateAmount2')
         inpDonate.value = '';
 
-            return
-    
-        }
+        return
+
+    }
 
     const containerDiv = document.getElementById('container')
     const inpDonateAmount2 = Donate('inpDonateAmount2')
@@ -112,21 +120,18 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
 
 
 
-            // ! validation Tne
-            const inpDonateAmount = Donate('inpDonateAmount3')
-            const mainBalance = DonateInner('mainBalance')
-        
-            if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
-                            // ! reset input
-            const inpDonate = document.getElementById('inpDonateAmount3')
-            inpDonate.value = '';
-    
-                return
-        
-            }
+    // ! validation Tne
+    const inpDonateAmount = Donate('inpDonateAmount3')
+    const mainBalance = DonateInner('mainBalance')
 
+    if (isNaN(inpDonateAmount) || inpDonateAmount <= 0) {
+        // ! reset input
+        const inpDonate = document.getElementById('inpDonateAmount3')
+        inpDonate.value = '';
 
-    
+        return
+
+    }
 
 
     const containerDiv = document.getElementById('container')
@@ -146,9 +151,6 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
 
 
     // ! history end three
-
-
-
 
 
 

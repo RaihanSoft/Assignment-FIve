@@ -5,12 +5,10 @@ document.getElementById('btnDonate2').addEventListener('click', function () {
     const mainBalance = DonateInner('mainBalance')
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
         alert("Invalid Input")
+        document.getElementById('inpDonateAmount2').value='';
         return
 
     }
-
-        
-
 
     // !special Model
     const special = document.getElementById('specialModel')
@@ -21,13 +19,11 @@ document.getElementById('btnDonate2').addEventListener('click', function () {
 
         
         // ! reset input
-        const inpDonate = document.getElementById('inpDonateAmount2')
-        inpDonate.value='';
+    document.getElementById('inpDonateAmount2').value='';
+ 
     
 
     })
-
-
 
     // !function calls 
     const donatedBalance = DonateInner('donatedBalance2')
