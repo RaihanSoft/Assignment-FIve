@@ -1,6 +1,9 @@
 document.getElementById('historyBtn').addEventListener('click', function () {
 
 
+    
+
+
 
 
 
@@ -15,6 +18,11 @@ document.getElementById('historyBtn').addEventListener('click', function () {
     btnDonation.classList.remove('bg-prime')
 
     document.getElementById('historyBtn').classList.add('bg-prime')
+
+
+    btnDonation.classList.add('text-gray-500')
+    historyBtn.classList.remove('text-gray-500')
+   
     // ! second 
 
     document.getElementById('donationBtn').addEventListener('click', function () {
@@ -23,6 +31,9 @@ document.getElementById('historyBtn').addEventListener('click', function () {
         document.getElementById('historyBtn').classList.remove('bg-prime')
         btnDonation.classList.add('bg-prime')
         header.classList.remove('hidden')
+
+        historyBtn.classList.add('text-gray-500')
+        btnDonation.classList.remove('text-gray-500')
 
     })
 
@@ -60,9 +71,6 @@ document.getElementById('btnDonate').addEventListener('click', function () {
            `
 
     containerDiv.appendChild(p)
-
-
-
 
 
 

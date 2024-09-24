@@ -8,7 +8,7 @@ document.getElementById('btnDonate').addEventListener('click', function () {
 
     if (isNaN(inpDonateAmount) || inpDonateAmount <= 0 || inpDonateAmount > mainBalance) {
         alert("Invalid Input")
-        document.getElementById('inpDonateAmount').value='';
+        document.getElementById('inpDonateAmount').value = '';
         return
     }
 
@@ -21,7 +21,7 @@ document.getElementById('btnDonate').addEventListener('click', function () {
         // ! reset input
         const inpDonate = document.getElementById('inpDonateAmount')
         inpDonate.value = '';
-   
+
 
     })
 

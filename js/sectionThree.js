@@ -13,8 +13,6 @@ document.getElementById('btnDonate3').addEventListener('click', function () {
     }
 
 
-
-
     // !special Model
     const special = document.getElementById('specialModel')
     special.classList.remove('hidden')
